@@ -1,0 +1,25 @@
+{
+  "name": "birdb0t",
+  "version": "1.0.0",
+  "description": "node.js twitter bot ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/underd0g1/birdb0t.git"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "bot",
+    "twitter"
+  ],
+  "author": "underd0g",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/underd0g1/birdb0t/issues"
+  },
+  "homepage": "https://github.com/underd0g1/birdb0t#readme"
+}
