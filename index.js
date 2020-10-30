@@ -55,7 +55,7 @@ t.get('search/tweets', parameters, function(err, data, response) {
 
         }
 
-        // If the favorite is successful, log the url of the tweet
+        
 
 
         else{
@@ -64,7 +64,7 @@ t.get('search/tweets', parameters, function(err, data, response) {
 
           let tweetId = response.id_str;
 
-          console.log('Favorited: ', `https://twitter.com/${username}/status/${tweetId}`)
+          console.log('Bot liked : ', `https://twitter.com/${username}/status/${tweetId}`)
 
         }
 
