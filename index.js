@@ -9,17 +9,34 @@
 
 //require the npm modules
 var twit = require('twit');
-var creds = require('./config');
 var fetch = require('node-fetch');
-var lib = require('./lib/like.js');
+// user defined modules
+var like = require('./lib/like.js');
+var creds = require('/.creds');
+var follow = require('./lib/follow.js);
+
+
 //say hi
 console.log('WeLcOmE tO bIrDb0x');
 
 console.log('------------------')
 
-//call your credentials module
+//call the functionz
 
-lib.like();
+  //lil select action
+switch (process.env.ACTION){
+  case 'follow' : 
+    like.like();
+    break;
+  case 'like':
+    follow.follow()
+    break;
+  default:
+    console.log('missing ACTION env var');
+    break;
+}
+
+
 
 
 
