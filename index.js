@@ -12,8 +12,8 @@ var twit = require('twit');
 var fetch = require('node-fetch');
 // user defined modules
 var like = require('./lib/like.js');
-var creds = require('/.creds');
-var follow = require('./lib/follow.js);
+var creds = require('./config.js');
+var follow = require('./lib/follow.js');
 var tweet = require('./lib/tweet.js');
 
 
@@ -30,7 +30,7 @@ switch (process.env.ACTION){
     like.like();
     break;
   case 'like':
-    follow.follow()
+    follow.foll0w()
     break;
   case 'tweet':
     tweet.tweet();
