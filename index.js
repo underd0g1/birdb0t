@@ -14,6 +14,7 @@ var fetch = require('node-fetch');
 var like = require('./lib/like.js');
 var creds = require('/.creds');
 var follow = require('./lib/follow.js);
+var tweet = require('./lib/tweet.js');
 
 
 //say hi
@@ -30,6 +31,9 @@ switch (process.env.ACTION){
     break;
   case 'like':
     follow.follow()
+    break;
+  case 'tweet':
+    tweet.tweet();
     break;
   default:
     console.log('missing ACTION env var');
