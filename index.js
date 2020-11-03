@@ -15,6 +15,7 @@ var like = require('./lib/like.js');
 var creds = require('./config.js');
 var follow = require('./lib/follow.js');
 var tweet = require('./lib/tweet.js');
+var stream = require('./lib/stream.js');
 
 
 //say hi
@@ -35,12 +36,12 @@ switch (process.env.ACTION){
   case 'tweet':
     tweet.tweet();
     break;
-  case 'stream';
+  case 'stream':
     stream.stream();
     break;
   default:
     console.log('Missing ACTION .env var');
-    console.log("Syntax: ACTION=[tweet,follow,like] Q=[tweet, searchterm] node index.js
+    console.log("Syntax: ACTION=[tweet,follow,like] Q=[tweet, searchterm] node index.js");
     break;
 }
 
